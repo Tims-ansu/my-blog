@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ if .Params.course }}
+<section class="page-heading course-heading">
+  <a class="back-link" href="{{ "blog/" | relURL }}">← All courses</a>
+  <p class="eyebrow">{{ .Params.code }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="intro-copy">{{ . }}</div>{{ end }}
+</section>
+<section aria-label="Course posts">
+{{ $paginator := .Paginate .RegularPagesRecursive.ByDate.Reverse }}
+{{ range $paginator.Pages }}{{ partial "post-row.html" . }}{{ else }}<div class="course-empty"><h2>No posts yet.</h2><p>Notes, assignments, and projects will appear here.</p></div>{{ end }}
+{{ if gt $paginator.TotalPages 1 }}<nav class="pagination" aria-label="Pagination">{{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">← Newer posts</a>{{ end }}<span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>{{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">Older posts →</a>{{ end }}</nav>{{ end }}
+</section>
+{{ else }}
+<section class="page-heading"><p class="eyebrow">THE NOTEBOOK</p><h1>{{ .Title }}</h1><div class="intro-copy">{{ .Content }}</div></section>
+<section aria-label="Courses">{{ partial "course-grid.html" . }}</section>
+{{ end }}
+{{ end }}

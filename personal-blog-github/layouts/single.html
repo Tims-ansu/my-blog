@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="article-page">
+  {{ if eq .Section "blog" }}<a class="back-link" href="{{ .CurrentSection.RelPermalink }}">← {{ .CurrentSection.Title }}</a>{{ end }}
+  <header class="article-heading"><p class="eyebrow">{{ .Params.category | default .Title }}{{ if .Params.sample }} / SAMPLE POST{{ end }}</p><h1>{{ .Title }}</h1>{{ with .Description }}<p class="intro-copy">{{ . }}</p>{{ end }}{{ if eq .Section "blog" }}<div class="article-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time><span>·</span><span>{{ .ReadingTime }} min read</span></div>{{ end }}</header>
+  <div class="prose">{{ .Content }}</div>
+  {{ if eq .Layout "contact" }}<div class="contact-detail"><span class="eyebrow">EMAIL</span>{{ with site.Params.email }}<a class="email-link" href="mailto:{{ . }}">{{ . }} <span aria-hidden="true">↗</span></a>{{ else }}<p>Contact details coming soon.</p>{{ end }}</div>{{ end }}
+  {{ if eq .Section "blog" }}<div class="article-end"><span>Thanks for reading.</span><a href="{{ .CurrentSection.RelPermalink }}">More from this course →</a></div>{{ end }}
+</article>
+{{ end }}

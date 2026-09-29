@@ -1,0 +1,36 @@
+baseURL = 'https://tims-ansu.github.io/my-blog/'
+locale = 'en'
+title = 'Jiurui Guo'
+publishDir = 'dist'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  name = 'Jiurui Guo'
+  description = 'Course notes, assignments, and projects.'
+  intro = 'Jiurui Guo'
+  bio = 'A personal notebook for courses, experiments, and ideas worth keeping.'
+  email = ''
+
+[pagination]
+  pagerSize = 10
+
+[markup.highlight]
+  style = 'github'
+
+[[menus.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+[[menus.main]]
+  name = 'Blog'
+  pageRef = '/blog'
+  weight = 20
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 30
+[[menus.main]]
+  name = 'Contact'
+  pageRef = '/contact'
+  weight = 40
