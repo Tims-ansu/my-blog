@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{ with site.Home.OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">{{ end }}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="{{ site.Home.RelPermalink }}"><span class="brand-mark" aria-hidden="true">{{ substr site.Params.name 0 1 }}</span>{{ site.Params.name }}</a>
+      <nav aria-label="Main navigation">
+        {{ $current := . }}
+        {{ range site.Menus.main }}
+          {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+          {{ if and (eq .Name "Blog") (eq $current.Section "blog") }}{{ $active = true }}{{ end }}
+          <a href="{{ .URL }}" {{ if $active }}class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </header>
+    <main id="main">{{ block "main" . }}{{ end }}</main>
+    <footer class="site-footer"><span>© {{ now.Year }} {{ site.Params.name }}</span><div><a href="{{ "index.xml" | relURL }}">RSS</a><span>Made with <a href="https://gohugo.io/">Hugo</a></span></div></footer>
+  </div>
+</body>
+</html>
