@@ -1,0 +1,20 @@
+[
+  {
+    "file": "scissors.jpg",
+    "author": "Fan of Scissors",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Crossed_scissors.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "none; original downloaded unchanged, CSS display scaling only",
+    "sha256": "5ff8af693983d6833380200f6e52f59f1668229faad4bd2cbac139753233d115"
+  },
+  {
+    "file": "usb-a.jpg",
+    "author": "Evan-Amos",
+    "source_page": "https://commons.wikimedia.org/wiki/File:USB-Connector-Standard.jpg",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "none; original downloaded unchanged, CSS display scaling only",
+    "sha256": "36a374d07e5192ef3398ce1d8951af6813a398f7aebe823f0e5bdbd2fd013ad9"
+  }
+]

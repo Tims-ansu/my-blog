@@ -1,0 +1,32 @@
+{
+  "mixed-obstacle": {
+    "trials": 100,
+    "successes": 48,
+    "mean_seconds_all_attempts": 6.4584,
+    "layout_seed": 11082026
+  },
+  "mixed-open": {
+    "trials": 100,
+    "successes": 100,
+    "mean_seconds_all_attempts": 2.6386000000000003,
+    "layout_seed": 11082026
+  },
+  "random-obstacle": {
+    "trials": 100,
+    "successes": 0,
+    "mean_seconds_all_attempts": 6.8984000000000005,
+    "layout_seed": 11082026
+  },
+  "trained-obstacle": {
+    "trials": 100,
+    "successes": 41,
+    "mean_seconds_all_attempts": 6.816800000000001,
+    "layout_seed": 11082026
+  },
+  "trained-open": {
+    "trials": 100,
+    "successes": 0,
+    "mean_seconds_all_attempts": 7.822,
+    "layout_seed": 11082026
+  }
+}

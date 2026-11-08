@@ -1,0 +1,309 @@
+{
+  "kind": "automated technical check; not a human study",
+  "device": "Google APIs x86_64 emulator with ARM64 translation; AEHD 2.2 hardware acceleration",
+  "checks": [
+    {
+      "check": "APK installation",
+      "passed": true,
+      "detail": "Performing Streamed Install\r\nSuccess"
+    },
+    {
+      "check": "Mobile scene startup",
+      "passed": true,
+      "detail": {
+        "realtime": 2.5729401111602783,
+        "timeScale": 1.0,
+        "x": -3.025050640106201,
+        "z": -0.6535458564758301,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 0,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    },
+    {
+      "check": "Drag is received by Unity",
+      "passed": true,
+      "detail": [
+        {
+          "realtime": 4.915484428405762,
+          "timeScale": 1.0,
+          "x": -0.6891957521438599,
+          "z": -0.6535458564758301,
+          "inputX": 1.0,
+          "inputY": 0.0,
+          "pointer": 0,
+          "touchCount": 1,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        },
+        {
+          "realtime": 5.150819301605225,
+          "timeScale": 1.0,
+          "x": -0.699999988079071,
+          "z": -0.6535458564758301,
+          "inputX": 1.0,
+          "inputY": 0.0,
+          "pointer": 0,
+          "touchCount": 1,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        }
+      ]
+    },
+    {
+      "check": "Sphere responds to drag",
+      "passed": true,
+      "detail": {
+        "initial": {
+          "realtime": 2.5729401111602783,
+          "timeScale": 1.0,
+          "x": -3.025050640106201,
+          "z": -0.6535458564758301,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 0,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        },
+        "released": {
+          "realtime": 5.3803863525390625,
+          "timeScale": 1.0,
+          "x": -0.699999988079071,
+          "z": -0.6535458564758301,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 0,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        }
+      }
+    },
+    {
+      "check": "Release clears held input",
+      "passed": true,
+      "detail": {
+        "realtime": 5.3803863525390625,
+        "timeScale": 1.0,
+        "x": -0.699999988079071,
+        "z": -0.6535458564758301,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 0,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    },
+    {
+      "check": "Pause freezes physics",
+      "passed": true,
+      "detail": {
+        "paused": {
+          "realtime": 6.936618804931641,
+          "timeScale": 0.0,
+          "x": -0.699999988079071,
+          "z": -0.6535458564758301,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 1,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        },
+        "later": {
+          "realtime": 7.628093719482422,
+          "timeScale": 0.0,
+          "x": -0.699999988079071,
+          "z": -0.6535458564758301,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 0,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        }
+      }
+    },
+    {
+      "check": "Reset clears input",
+      "passed": true,
+      "detail": {
+        "realtime": 8.539165496826172,
+        "timeScale": 0.0,
+        "x": 2.938615322113037,
+        "z": -1.4144231081008911,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 1,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    },
+    {
+      "check": "Reset changes placement",
+      "passed": true,
+      "detail": {
+        "before": {
+          "realtime": 7.628093719482422,
+          "timeScale": 0.0,
+          "x": -0.699999988079071,
+          "z": -0.6535458564758301,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 0,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        },
+        "after": {
+          "realtime": 8.539165496826172,
+          "timeScale": 0.0,
+          "x": 2.938615322113037,
+          "z": -1.4144231081008911,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 1,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        }
+      }
+    },
+    {
+      "check": "Resume restores simulation",
+      "passed": true,
+      "detail": {
+        "realtime": 9.900843620300293,
+        "timeScale": 1.0,
+        "x": 2.938615322113037,
+        "z": -1.4144231081008911,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 0,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    },
+    {
+      "check": "CPU policy moves sphere with no held touch",
+      "passed": true,
+      "detail": {
+        "after_mode_reset": {
+          "realtime": 11.758255958557129,
+          "timeScale": 1.0,
+          "x": 1.4397084712982178,
+          "z": -4.081279754638672,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 0,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        },
+        "later_same_episode": {
+          "realtime": 12.450201034545898,
+          "timeScale": 1.0,
+          "x": -1.212406873703003,
+          "z": -3.937976360321045,
+          "inputX": 0.0,
+          "inputY": 0.0,
+          "pointer": -1,
+          "touchCount": 0,
+          "width": 800,
+          "height": 480,
+          "completed": 0
+        }
+      }
+    },
+    {
+      "check": "Return from background stays paused",
+      "passed": true,
+      "detail": {
+        "realtime": 15.723864555358887,
+        "timeScale": 0.0,
+        "x": -2.6371166706085205,
+        "z": -2.0644967555999756,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 0,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    },
+    {
+      "check": "Cold relaunch restores manual initial state",
+      "passed": true,
+      "detail": {
+        "realtime": 2.5325775146484375,
+        "timeScale": 1.0,
+        "x": 2.4417784214019775,
+        "z": 0.8314110040664673,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 0,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": "launch_command",
+      "output": "Starting: Intent { cmp=com.hci.sortingyard/com.unity3d.player.UnityPlayerGameActivity }"
+    },
+    {
+      "event": "startup",
+      "sample": {
+        "realtime": 2.5729401111602783,
+        "timeScale": 1.0,
+        "x": -3.025050640106201,
+        "z": -0.6535458564758301,
+        "inputX": 0.0,
+        "inputY": 0.0,
+        "pointer": -1,
+        "touchCount": 0,
+        "width": 800,
+        "height": 480,
+        "completed": 0
+      }
+    },
+    {
+      "event": "launch_command",
+      "output": "Starting: Intent { cmp=com.hci.sortingyard/com.unity3d.player.UnityPlayerGameActivity }"
+    },
+    {
+      "event": "launch_command",
+      "output": "Starting: Intent { cmp=com.hci.sortingyard/com.unity3d.player.UnityPlayerGameActivity }"
+    }
+  ],
+  "two_finger_test": "Five injected-pointer checks passed; see multitouch-check.json",
+  "physical_phone_test": "not performed",
+  "android_release": "15",
+  "apk_file": "SortingYard.apk",
+  "apk_sha256": "82e595158212b21dff197c4545fb5cd09533c97cbaee6c7edb14fd01ee39ebef",
+  "combined_technical_checks_passed": 17
+}

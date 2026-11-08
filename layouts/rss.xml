@@ -1,0 +1,20 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Title }} · {{ site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Description | default site.Params.description }}</description>
+    <language>en</language>
+    {{ with .OutputFormats.Get "RSS" }}<atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml"/>{{ end }}
+    {{ $pages := .RegularPagesRecursive }}
+    {{ if .IsHome }}{{ $pages = where site.RegularPages "Section" "blog" }}{{ end }}
+    {{ range $pages.ByWeight }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Description }}</description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>

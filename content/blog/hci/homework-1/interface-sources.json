@@ -1,0 +1,20 @@
+[
+  {
+    "file": "arngren-overview.jpg",
+    "source_url": "https://arngren.net/",
+    "captured_date": "2026-11-08",
+    "area": "initial catalogue viewport",
+    "use": "interface criticism; no CC0 claim",
+    "copyright": "original site and respective image owners",
+    "sha256": "59c5f8bc8ffa87bd5640aceda840c7d4d16197189a9e932cf69c6467c78d3237"
+  },
+  {
+    "file": "arngren-region.jpg",
+    "source_url": "https://arngren.net/",
+    "captured_date": "2026-11-08",
+    "area": "second capture clipped to shared vehicle frame",
+    "use": "interface criticism; no CC0 claim",
+    "copyright": "original site and respective image owners",
+    "sha256": "e3a084eb8688987cc1d9e5018f645775b2b1eaf0b76246747d5731013aa02419"
+  }
+]

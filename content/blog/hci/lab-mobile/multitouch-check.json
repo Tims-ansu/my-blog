@@ -1,0 +1,103 @@
+{
+  "kind": "injected two-pointer technical check; not a participant session",
+  "input_device": "virtio_input_multi_touch_1 (/dev/input/event2)",
+  "samples": {
+    "before": {
+      "realtime": 23.44126319885254,
+      "timeScale": 1.0,
+      "x": -2.82462739944458,
+      "z": -0.026871204376220703,
+      "inputX": 0.0,
+      "inputY": 0.0,
+      "pointer": -1,
+      "touchCount": 0,
+      "width": 800,
+      "height": 480,
+      "completed": 1
+    },
+    "left_held": {
+      "realtime": 24.602373123168945,
+      "timeScale": 1.0,
+      "x": 3.8004322052001953,
+      "z": 1.71663498878479,
+      "inputX": 1.0,
+      "inputY": 0.0,
+      "pointer": 0,
+      "touchCount": 1,
+      "width": 800,
+      "height": 480,
+      "completed": 2
+    },
+    "two_fingers_down": {
+      "realtime": 25.469091415405273,
+      "timeScale": 1.0,
+      "x": 3.3761940002441406,
+      "z": -2.179650068283081,
+      "inputX": 1.0,
+      "inputY": 0.0,
+      "pointer": 0,
+      "touchCount": 2,
+      "width": 800,
+      "height": 480,
+      "completed": 3
+    },
+    "after_second_finger_pause": {
+      "realtime": 26.132612228393555,
+      "timeScale": 0.0,
+      "x": 4.051398754119873,
+      "z": -2.179650068283081,
+      "inputX": 1.0,
+      "inputY": 0.0,
+      "pointer": 0,
+      "touchCount": 1,
+      "width": 800,
+      "height": 480,
+      "completed": 3
+    },
+    "after_second_finger_resume": {
+      "realtime": 27.70452117919922,
+      "timeScale": 1.0,
+      "x": -3.1630399227142334,
+      "z": 2.115734815597534,
+      "inputX": 1.0,
+      "inputY": 0.0,
+      "pointer": 0,
+      "touchCount": 1,
+      "width": 800,
+      "height": 480,
+      "completed": 4
+    },
+    "after_second_finger_reset": {
+      "realtime": 29.103431701660156,
+      "timeScale": 1.0,
+      "x": -2.6144638061523438,
+      "z": 1.51936936378479,
+      "inputX": 0.0,
+      "inputY": 0.0,
+      "pointer": -1,
+      "touchCount": 1,
+      "width": 800,
+      "height": 480,
+      "completed": 4
+    },
+    "left_still_held_after_reset": {
+      "realtime": 29.770170211791992,
+      "timeScale": 1.0,
+      "x": -2.5251431465148926,
+      "z": 1.51936936378479,
+      "inputX": 0.0,
+      "inputY": 0.0,
+      "pointer": -1,
+      "touchCount": 1,
+      "width": 800,
+      "height": 480,
+      "completed": 4
+    }
+  },
+  "two_pointers_received": true,
+  "second_finger_pause_works": true,
+  "second_finger_resume_works": true,
+  "second_finger_reset_clears_input": true,
+  "held_finger_does_not_restart_after_reset": true,
+  "apk_sha256": "82e595158212b21dff197c4545fb5cd09533c97cbaee6c7edb14fd01ee39ebef"
+}

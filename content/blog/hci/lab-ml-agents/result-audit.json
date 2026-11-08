@@ -1,0 +1,84 @@
+{
+  "type": "audit of existing evaluation and checkpoint normalizers",
+  "new_training": false,
+  "new_unity_episodes": 0,
+  "conditions": {
+    "mixed-obstacle": {
+      "episodes": 100,
+      "successes": 48,
+      "failures_near_time_limit": 52,
+      "sha256": "8590e39f1fb022a84d9dff8c63c01a8d95665f51537a55bf796e995f075cb267"
+    },
+    "mixed-open": {
+      "episodes": 100,
+      "successes": 100,
+      "failures_near_time_limit": 0,
+      "sha256": "c8d0b4b8d73b18514dd300fec3e998837380bc4262d3295b1767023a0aae7586"
+    },
+    "random-obstacle": {
+      "episodes": 100,
+      "successes": 0,
+      "failures_near_time_limit": 36,
+      "sha256": "d0dcc1776bcf0ad202bf7d8e27037e3610ffd92a3d3ddde08b3f6690b6b39cf3"
+    },
+    "trained-obstacle": {
+      "episodes": 100,
+      "successes": 41,
+      "failures_near_time_limit": 57,
+      "sha256": "c04ceeddad60901bd174385db29790014fca4e6389b61980cd8e87092804a295"
+    },
+    "trained-open": {
+      "episodes": 100,
+      "successes": 0,
+      "failures_near_time_limit": 72,
+      "sha256": "7b8f296d77d911f0d739e446bd7f4f11d14c26786b50ccc3ad65781897635e13"
+    }
+  },
+  "normalizers": {
+    "obstacle_only": {
+      "observation_index": 8,
+      "observation": "barrier_present",
+      "count": 250016.0,
+      "mean": 0.9999786019325256,
+      "variance": 7.999354050099338e-06,
+      "raw_normalized_absent": -353.5600994040523,
+      "raw_normalized_present": 0.007565664753896084,
+      "clipped_absent": -5,
+      "clipped_present": 0.007565664753896084,
+      "checkpoint_sha256": "6139811d31302b49d682e15721d70255285443f375cf07554617a94acfbf9d54",
+      "counterfactual_probe": {
+        "startup_states": 100,
+        "changed_feature_only": "barrier_present",
+        "mean_action_l2_difference": 0.2202635556459427,
+        "finite_outputs": true,
+        "note": "Model queries only; does not isolate the cause of Unity failures."
+      }
+    },
+    "mixed": {
+      "observation_index": 8,
+      "observation": "barrier_present",
+      "count": 500065.0,
+      "mean": 0.7762688994407654,
+      "variance": 0.17366900115484987,
+      "raw_normalized_absent": -1.8627348231973127,
+      "raw_normalized_present": 0.5368651408605699,
+      "clipped_absent": -1.8627348231973127,
+      "clipped_present": 0.5368651408605699,
+      "checkpoint_sha256": "83ae8292a7047ff8a1211adff5a653dc2952c91c3296f3bd8ad49c6858a870f1",
+      "counterfactual_probe": {
+        "startup_states": 100,
+        "changed_feature_only": "barrier_present",
+        "mean_action_l2_difference": 0.15138410031795502,
+        "finite_outputs": true,
+        "note": "Model queries only; does not isolate the cause of Unity failures."
+      }
+    }
+  },
+  "barrier_paired_outcomes": {
+    "both_success": 41,
+    "initial_only": 0,
+    "final_only": 7,
+    "both_fail": 52
+  },
+  "interpretation": "Observed counts are consistent across raw CSVs. The constant training flag and its normalizer give a concrete distribution-shift mechanism for the old open-floor failure. This audit does not prove that normalization is the sole cause, or that a single evaluation seed establishes robustness."
+}
